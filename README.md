@@ -1,6 +1,6 @@
 # F4F TreeLens — reproduction and improvement
 
-An independent reproduction of Farmers for Forests' TreeLens DBH-to-carbon pipeline (August 2025), replacing the pooled GPR baseline with a hierarchical Bayesian model. Two pipeline-level findings (Jensen back-transform; 80% credit haircut) are independent of the model choice.
+An independent reproduction of Farmers for Forests' **TreeLens** platform (August 2025), replacing the pooled GPR baseline with a hierarchical Bayesian model. Two pipeline-level findings - Jensen back-transform; 80% credit haircut -  are independent of the model choice.
 
 ## Contents
 
@@ -45,7 +45,8 @@ uv sync                                   # installs dependencies into .venv
 .venv/bin/python hierarchical_dbh_v31.py  # reuses out_v3/ for Jensen-corrected carbon
 ```
 
-Run v3 first — v31 reuses the posterior saved in `out_v3/trace_v3.nc` and will fail if it doesn't exist. Model fit takes ~3–7 minutes on a laptop (4 chains × 1,000 draws); v31 runs in ~30 seconds.
+Run v3 first — v31 reuses the posterior saved in `out_v3/trace_v3.nc` and will fail if it doesn't exist. 
+Model fit takes ~3–7 minutes on a laptop (4 chains × 1,000 draws); v31 runs in ~30 seconds.
 
 ## Writeup
 
@@ -53,4 +54,6 @@ See `white_paper/white_paper.pdf` for the full technical report.
 
 ## Data and prior work
 
-Ground truth from the [F4F public datasets repository](https://github.com/Farmers-For-Forests/public-datasets) (13 October 2025 release), used without modification. Original methodology: [TreeLens v1.0 white paper](https://www.farmersforforests.org/FFF/images/our-tech/tree-lens-white-paper.pdf).
+Ground truth from the [F4F public datasets repository](https://github.com/Farmers-For-Forests/public-datasets) (13 October 2025 release), used without modification. 
+
+Original methodology: [TreeLens v1.0 white paper](https://www.farmersforforests.org/FFF/images/our-tech/tree-lens-white-paper.pdf).
