@@ -31,3 +31,6 @@ missfont.log
 .idea/
 .vscode/
 *.swp
+
+# Per-fold prediction caches (grouped_split_eval.py); results live in the CSVs
+out_grouped/*.npz

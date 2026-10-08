@@ -6,7 +6,7 @@ aggregating to plot totals, and turning those totals into credit claims. Seven D
 from a pooled Gaussian process to hierarchical Bayesian models, are compared on the same
 open ground-truth data.
 
-Summary of results: [`FINDINGS.md`](FINDINGS.md). Paper: `white_paper/main.tex`.
+Paper: [`white_paper/main.pdf`](white_paper/main.pdf). Working notes: [`FINDINGS.md`](FINDINGS.md).
 
 ## Contents
 
@@ -19,7 +19,7 @@ Summary of results: [`FINDINGS.md`](FINDINGS.md). Paper: `white_paper/main.tex`.
 | `grouped_split_eval.py` | Same evaluation with whole plots held out (5-fold, models refit per fold) | `out_grouped/` |
 | `make_paper_figures.py` | Figures for the paper | `figures/paper_*.pdf` |
 | `hierarchical_dbh_v31.py` | Shared helpers (posterior prediction, CO₂ conversion) | — |
-| `hierarchical_dbh_model.py`, `hierarchical_dbh_v2.py`, `make_figures.py` | Earlier iterations, kept for history | — |
+| `hierarchical_dbh_model.py`, `hierarchical_dbh_v2.py`, `make_figures.py` | Earlier iterations, kept for history | `out_v2/` |
 
 ## Run
 
