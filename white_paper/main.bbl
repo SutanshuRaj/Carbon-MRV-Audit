@@ -1,0 +1,112 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abril-Pla et~al.(2023)Abril-Pla, Andreani, Carroll, et~al.]{pymc2023}
+Oriol Abril-Pla, Virgile Andreani, Colin Carroll, et~al.
+\newblock {PyMC}: A modern, and comprehensive probabilistic programming
+  framework in {Python}.
+\newblock \emph{PeerJ Computer Science}, 9:\penalty0 e1516, 2023.
+\newblock \doi{10.7717/peerj-cs.1516}.
+
+\bibitem[Angelopoulos and Bates(2023)]{angelopoulos2023conformal}
+Anastasios~N. Angelopoulos and Stephen Bates.
+\newblock Conformal prediction: A gentle introduction.
+\newblock \emph{Foundations and Trends in Machine Learning}, 16\penalty0
+  (4):\penalty0 494--591, 2023.
+
+\bibitem[Baskerville(1972)]{baskerville1972}
+G.~L. Baskerville.
+\newblock Use of logarithmic regression in the estimation of plant biomass.
+\newblock \emph{Canadian Journal of Forest Research}, 2\penalty0 (1):\penalty0
+  49--53, 1972.
+
+\bibitem[Brown(1997)]{brown1997primer}
+Sandra Brown.
+\newblock Estimating biomass and biomass change of tropical forests: A primer.
+\newblock FAO Forestry Paper 134, Food and Agriculture Organization of the
+  United Nations, Rome, 1997.
+\newblock URL \url{https://www.fao.org/4/w4095e/w4095e00.htm}.
+
+\bibitem[Chave et~al.(2014)]{chave2014}
+J{\'e}r{\^o}me Chave et~al.
+\newblock Improved allometric models to estimate the aboveground biomass of
+  tropical trees.
+\newblock \emph{Global Change Biology}, 20\penalty0 (10):\penalty0 3177--3190,
+  2014.
+
+\bibitem[{Farmers for Forests}(2025)]{f4fdata2025}
+{Farmers for Forests}.
+\newblock Public datasets repository (ground-truth release of 13 october 2025),
+  2025.
+\newblock URL \url{https://github.com/Farmers-For-Forests/public-datasets}.
+
+\bibitem[Gelman and Hill(2007)]{gelman2007hierarchical}
+Andrew Gelman and Jennifer Hill.
+\newblock \emph{Data Analysis Using Regression and Multilevel/Hierarchical
+  Models}.
+\newblock Cambridge University Press, 2007.
+
+\bibitem[Gneiting et~al.(2007)Gneiting, Balabdaoui, and Raftery]{gneiting2007}
+Tilmann Gneiting, Fadoua Balabdaoui, and Adrian~E. Raftery.
+\newblock Probabilistic forecasts, calibration and sharpness.
+\newblock \emph{Journal of the Royal Statistical Society: Series B},
+  69\penalty0 (2):\penalty0 243--268, 2007.
+
+\bibitem[Gupta et~al.(2025)Gupta, Datar, and Mulay]{treelens2025}
+A.~Gupta, M.~Datar, and P.~Mulay.
+\newblock {AI} based automated calculation of carbon stock in agroforestry
+  plantations ({TreeLens} white paper v1.0).
+\newblock Farmers for Forests, 2025.
+\newblock URL
+  \url{https://www.farmersforforests.org/FFF/images/our-tech/tree-lens-white-paper.pdf}.
+
+\bibitem[Hoffman and Gelman(2014)]{hoffman2014nuts}
+Matthew~D. Hoffman and Andrew Gelman.
+\newblock The no-{U}-turn sampler: Adaptively setting path lengths in
+  {Hamiltonian} {Monte} {Carlo}.
+\newblock \emph{Journal of Machine Learning Research}, 15:\penalty0 1593--1623,
+  2014.
+
+\bibitem[{ICAR-CRIDA}(2011)]{crida2011ahmednagar}
+{ICAR-CRIDA}.
+\newblock District agriculture contingency plan: {Ahmednagar}, {Maharashtra}.
+\newblock Technical report, ICAR Central Research Institute for Dryland
+  Agriculture, 2011.
+\newblock URL
+  \url{https://icar-crida.res.in/CP/Maharastra/MPKVV,%20Rahuri/MH2-AHMEDNAGAR%2031.03.2011.pdf}.
+
+\bibitem[Pedregosa et~al.(2011)]{pedregosa2011sklearn}
+Fabian Pedregosa et~al.
+\newblock Scikit-learn: Machine learning in {Python}.
+\newblock \emph{Journal of Machine Learning Research}, 12:\penalty0 2825--2830,
+  2011.
+
+\bibitem[Rasmussen and Williams(2006)]{rasmussen2006gpml}
+Carl~Edward Rasmussen and Christopher K.~I. Williams.
+\newblock \emph{Gaussian Processes for Machine Learning}.
+\newblock MIT Press, 2006.
+
+\bibitem[Sileshi(2014)]{sileshi2014}
+Gudeta~W. Sileshi.
+\newblock A critical review of forest biomass estimation models, common
+  mistakes and corrective measures.
+\newblock \emph{Forest Ecology and Management}, 329:\penalty0 237--254, 2014.
+
+\bibitem[Sprugel(1983)]{sprugel1983}
+D.~G. Sprugel.
+\newblock Correcting for bias in log-transformed allometric equations.
+\newblock \emph{Ecology}, 64\penalty0 (1):\penalty0 209--210, 1983.
+
+\bibitem[{Verra}(2023)]{verra2022vmd0001}
+{Verra}.
+\newblock {VMD0001}: Estimation of carbon stocks in the above- and belowground
+  biomass in live tree and non-tree pools ({CP-AB}), v1.2.
+\newblock Verified Carbon Standard module, approved 27 November 2023, 2023.
+\newblock URL
+  \url{https://verra.org/documents/vmd0001-estimation-of-carbon-stocks-in-above-and-belowground-biomass-in-live-tree-and-non-tree-pools-cp-ab-v1-2}.
+
+\end{thebibliography}
