@@ -242,3 +242,42 @@ Eq. 3.2.2: AGB = 10^−0.535 · BA, BA = πD²/4 in cm² (191 trees, DBH 3–30 
 - Plot MAE drops ~3 pp for every model (v3 14.7 → 12.3%), and the 80% rule over-claims a bit
   less (15–27% vs 19–35%) — less curvature, smaller tails. Ranking of models unchanged.
 - Paper: Limitations rewritten with these numbers; new Appendix C (Table `tab:allometry`).
+
+## 10. Plot-held-out evaluation — `grouped_split_eval.py` → `out_grouped/`
+
+5-fold GroupKFold over the 35 block-year groups of the full modelling set (6,292 trees);
+all five models refit per fold (20 MCMC fits + 5 GPR). 40 test trees dropped (species
+unseen in that fold's training set); unseen district → δ = 0. 33 held-out plots with
+≥10 trees (median 119, range 25–926), 6,252 trees. R̂ ≤ 1.01 everywhere; divergences only
+in folds 0–1 for A1/A2/v3 (18–53 of 4,000 draws, ≤1.3%).
+
+| Model | Tree cov. 90% | Plot cov. 50 / 80% | p25 over-claim | p10 | 80% rule | 80% rule left / over |
+|---|---|---|---|---|---|---|
+| GPR | 89.7% | 6 / 12% | 49 [33–65] | 49 [33–65] | 30 [17–47] | 24.9 / 5.5 |
+| A0 | 90.1% | 12 / 30% | 58 [41–73] | 46 [30–62] | 33 [20–50] | 24.1 / 7.5 |
+| A1 | 87.0% | 18 / 36% | 61 [44–75] | 46 [30–62] | 30 [17–47] | 17.4 / 10.5 |
+| A2 | 86.1% | 18 / 33% | 55 [38–70] | 46 [30–62] | 33 [20–50] | 23.1 / 9.9 |
+| v3 | 86.9% | 12 / 33% | 49 [33–65] | 36 [22–53] | 27 [15–44] | 19.7 / 4.9 |
+
+- Tree split flattered plot calibration: 80% plot coverage 46–62% → **12–36%** held out.
+- For every model the Wilson 95% CI excludes the nominal 25% (p25) and 10% (p10).
+- Held-out tree-level RMSE: GPR 3.31, A0 3.36, A1 2.94, A2 3.16, v3 2.79 cm (vs 2.24–2.87 tree split).
+- Mean-policy fragility: Gadchiroli|1990 plot (33 trees, 1 species), A1 posterior mean
+  +1,072% vs p25 +33% — a few extreme draws dominate the mean under extrapolation.
+  Mean-policy MAE is therefore inflated (A1 58.9%); quantile policies are robust.
+- Spearman |err| vs plot size now −0.12 to −0.33 (weak).
+
+Paper: new §5.1 "Held-out plots" (Table 4), abstract sentence, checklist item 4 quantified,
+Limitations rewritten. Jensen table/figure now include GPR (log inputs) → seven models
+(gap 19.0% observed vs 18.6% analytic). Note: an intermediate edit had overwritten the
+Jensen table body with the policy table; restored and checked row-by-row against backup.
+
+### 10.1 Species claim narrowed in the paper (after held-out run)
+
+- Abstract: per-tree coverage "93% (tree split); 86–90% on held-out farms"; species pooling
+  "reduces per-tree DBH error by 13–17%, only when species is known, and does not reduce
+  aggregate CO₂ bias".
+- §3: held-out RMSE (GPR 3.31, H-drone 3.36, H-species 2.94 = −13% vs H-drone,
+  H-species+district 3.16, H-full 2.79 cm); no log-scale gain (MAPE log 10.4–10.9% for all);
+  district hurts on unseen farms; held-out aggregate CO₂ least biased for GPR (+0.3% vs
+  +3.5 to +16.9%).
